@@ -1,0 +1,26 @@
+.form-input {
+    display: block;
+
+    input {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 32px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    label {
+        color: #666;
+        display: block;
+        font-size: 18px;
+        height: 32px;
+        padding: 5px 5px 5px 0;
+        text-transform: uppercase;
+        transition: all 0.3s linear;
+
+        &.small {
+            font-size: 12px;
+        }
+
+    }
+}

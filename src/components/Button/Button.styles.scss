@@ -1,0 +1,41 @@
+$white: #ffffff;
+$grey: #444444;
+$blue : #4285f4;
+
+button.button {
+	background-color: $grey;
+	color: $white;
+	display: inline-block;
+	padding: 8px 28px;
+	text-align: center;
+	transition: background-color 0.5s ease-out;
+
+	&.button--alt {
+		background-color: $white;
+		color: $grey;
+
+		&:hover,
+		&:active {
+			background-color: darken($white, 10%);
+		}
+	}
+
+	&.button--google-sign-in {
+		background-color: $blue;
+		color: $white;
+
+		&:hover,
+		&:active {
+			background-color: darken($blue, 10%);
+		}	
+	}
+
+	&+button.button {
+		margin-left: 10px;
+	}
+
+	&:hover,
+	&:active {
+		background-color: darken($grey, 10%);
+	}
+}

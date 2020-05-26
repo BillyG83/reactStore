@@ -1,0 +1,42 @@
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.logo {
+	display: block;
+    max-width: 100px;
+    
+    .logo__svg {
+        color: #333;
+        fill: #333;
+        height: 70px;
+    }
+}
+
+.nav {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+        display: flex;
+
+        li {
+            display: block;
+
+            a,
+            div {
+                color: #666;
+                cursor: pointer;
+                display: block;
+                padding: 10px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

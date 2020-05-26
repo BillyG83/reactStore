@@ -1,0 +1,16 @@
+.image-menu-item {
+    padding: 50px;
+    width: calc(50% - 5px);
+
+    .menu-item__text {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 30px;
+        text-align: center;
+    }
+
+    // select first 3 only
+    &:nth-child(-n+3) {
+        margin-bottom: 10px;
+        width: calc(33.33% - 5px);
+    }
+}
